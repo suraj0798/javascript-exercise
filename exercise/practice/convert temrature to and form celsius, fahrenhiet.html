@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>convert temprature to and form celcius, fahrenhiet</title>
+</head>
+<body>
+    <script>
+        function ctof(celsius) {
+            let cTemp = celsius;
+            let cTof = (cTemp * 1.8) + 32;
+            let message = cTemp + "\xB0C is " + cTof + " \xB0F. <br>";
+            document.writeln(message);
+        }
+
+        function ftoc(fahrenhiet) {
+            let fTemp = fahrenhiet;
+            let fToc = (fTemp - 32) / 1.8;
+            let message = fTemp + "\xB0F is " + fToc + " \xB0C."
+            document.writeln(message);
+        }
+        ctof(60);
+        ftoc(45);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Calculate number of days left until next Diwali</title>
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var diwali = new Date(today.getFullYear(), 9, 24);
+        if (today.getMonth == 9 && today.getDate > 24) {
+            diwali.setFullYear(diwali.getFullYear() + 1);
+        }
+        var oneDay = 1000 * 60 * 60 * 24;
+        document.writeln(Math.ceil((diwali.getTime() - today.getTime())/(oneDay)) + " day left until diwali!")
+    </script>
+    
+</body>
+</html>
