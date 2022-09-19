@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Check whether a given integer is within 20 of 100 or 400</title>
+</head>
+<body>
+    <script>
+        function check(integer) {
+            return((Math.abs(100 - integer) <= 20) || (Math.abs(400 - integer) <= 20));
+        }
+        document.writeln(check(10) + "<br>");
+        document.writeln(check(90) + "<br>");
+        document.writeln(check(99) + "<br>");
+        document.writeln(check(199) + "<br>");
+        document.writeln(check(200) + "<br>");
+    </script>
+    
+</body>
+</html>

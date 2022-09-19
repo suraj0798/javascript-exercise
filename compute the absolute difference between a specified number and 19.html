@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Compute the absolute difference between a specified number and 19</title>
+</head>
+<body>
+    <script>
+        function absDiff(num) {
+            if(num >= 19){
+                return(3 * (num - 19));
+            }else{
+                return(19 - num);
+            }
+        }
+        document.writeln(absDiff(12) + "<br>");
+        document.writeln(absDiff(19) + "<br>");
+        document.writeln(absDiff(22) + "<br>");
+    </script>
+    
+</body>
+</html>
