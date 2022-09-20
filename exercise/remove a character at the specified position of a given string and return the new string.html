@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Remove a character at the specified position of a given string and return the new string</title>
+</head>
+<body>
+    <script>
+        function remChar(str1, charPos) {
+            part1 = str1.substring(0, charPos);
+            part2 = str1.substring(charPos + 1, str1.length)
+            return(part1 + part2);
+        }
+        document.writeln(remChar("Python", 0) + "<br>");
+        document.writeln(remChar("Python", 2) + "<br>");
+        document.writeln(remChar("Python", 4) + "<br>");
+    </script>
+    
+</body>
+</html>
